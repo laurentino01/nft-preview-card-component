@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  font-size: 22px;
+}
+h2 {
+  color: hsl(178, 100%, 50%);
+}
+p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+.container {
+  background-color: hsl(217, 54%, 11%);
+  padding: 40px 0;
+}
+.card__img_container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.486);
+  width: 250px;
+  top: 0%;
+  height: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 00.5s;
+  opacity: 0;
+}
+.card__img_container img {
+  width: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.overlay:hover {
+  opacity: 1;
+}
+
+.card {
+  flex-direction: column;
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 5px 15px hsla(210, 61%, 14%, 0.4);
+}
+.card h1 {
+  cursor: pointer;
+}
+.card h1:hover {
+  transition: 1s;
+
+  color: hsl(178, 100%, 50%);
+}
+.card__content {
+  margin: 0 25px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.card__content > * {
+  margin-bottom: 10px;
+}
+.card__content div:first-of-type {
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.card__content div:first-of-type svg {
+  margin-right: 10px;
+}
+.content__price p {
+  color: hsl(178, 100%, 50%);
+}
+.card__content div:first-of-type p {
+  font-size: 14px;
+}
+
+.card__footer p,
+.card__footer strong {
+  font-size: 12px;
+  cursor: pointer;
+}
+.card__footer p strong:hover {
+  transition: 1s;
+  color: hsl(178, 100%, 50%);
+}
+.card__footer {
+  margin: 10px 0 20px -70px;
+}
+
+.card__footer img:first-of-type {
+  margin: 0;
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+/*att*/
+.attribution {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
