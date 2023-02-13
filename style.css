@@ -26,6 +26,7 @@ p {
 .container {
   background-color: hsl(217, 54%, 11%);
   padding: 40px 0;
+  height: 100vh;
 }
 .card__img_container {
   position: relative;
